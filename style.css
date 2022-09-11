@@ -64,7 +64,20 @@ h1 {
   display: flex;
 }
 #nav_bar_container #nav_bar #nav_menu_container #nav_menu .nav_links {
+  box-sizing: border-box;
+  color: var(--font-secondary-color);
   margin-left: 3vw;
+  padding: 5px;
+  font-weight: 300;
+  transition: all 0.3s;
+}
+#nav_bar_container #nav_bar #nav_menu_container #nav_menu .nav_links:hover {
+  font-weight: 500;
+  color: var(--font-primary-color);
+}
+#nav_bar_container #nav_bar #nav_menu_container #nav_menu .active {
+  color: var(--font-primary-color);
+  font-weight: 500;
 }
 #nav_bar_container #nav_bar #nav_menu_container #search_container {
   box-sizing: border-box;
@@ -88,6 +101,37 @@ h1 {
 #search a:hover {
   box-sizing: content-box;
   border-color: rgba(70, 56, 19, 0.5294117647);
+}
+
+main {
+  position: relative;
+}
+
+#rocket_design {
+  position: absolute;
+  left: 55%;
+  top: 10%;
+}
+#rocket_design img {
+  width: 5vw;
+}
+
+#message_design {
+  position: absolute;
+  bottom: 12%;
+  left: 43%;
+}
+#message_design img {
+  width: 5vw;
+}
+
+#bullseye_design {
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+}
+#bullseye_design img {
+  width: 5vw;
 }
 
 #hero_container {
@@ -173,7 +217,7 @@ h1 {
 
 #hero_bottom {
   width: 250px;
-  margin: auto;
+  margin: 30px auto 0;
   border-radius: 5px;
   background-color: #515f6b;
 }
